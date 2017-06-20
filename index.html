@@ -15,32 +15,20 @@
 <body>
 	<section>
 		<div class="row">
-			<div class="col-md-3 col-sm-3">
+			<div class="col-md-12 col-sm-12 nav">
 				<button id="encuentrame">Encuéntrame</button>
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<input id="origin-input" class="controls" type="text" placeholder="Elige un punto de partida">
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<input id="destination-input" class="controls" type="text" placeholder="Elige un destino">
-
-		<!--	<div id="mode-selector" class="controls">
-					<input type="radio" name="type" id="changemode-walking" checked="checked">
-					<label for="changemode-walking">Walking</label>
-
-					<input type="radio" name="type" id="changemode-transit">
-					<label for="changemode-transit">Transit</label>
-
-					<input type="radio" name="type" id="changemode-driving">
-					<label for="changemode-driving">Driving</label>
-				</div> -->
-
-			</div>
-			<div class="col-md-3 col-sm-3">
-				<button id="encuentrame">Ruta</button>
+				<div class="cuadros">
+					<label for="origin">Origen</label>
+					<input id="origin-input" class="controls" type="text" placeholder="Elige un punto de partida">
+				</div>
+				<div class="cuadros">	
+					<label for="destination">Destino</label>
+					<input id="destination-input" class="controls" type="text" placeholder="Elige un destino">
+				</div>
+				<button id="ruta">Ruta</button>
 			</div>
 		</div>
-<!-- MAPA -->		
+		<!-- MAPA -->		
 		<div class="row">
 			<div class="col-md-12 col-sm-12" id="map">
 				<!-- Aquí ira nuestro mapa -->
@@ -49,7 +37,7 @@
 	</section>
 
 	<!-- Google Maps Api-->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuirPmXXn-_MU3BSj3wVvADlh23eZP7h8&callback=initMap" type="text/javascript"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuirPmXXn-_MU3BSj3wVvADlh23eZP7h8&libraries=places&callback=initMap" async defer></script>
 	<!-- Bootstrap Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="assets/js/main.js"></script>
